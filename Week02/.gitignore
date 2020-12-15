@@ -1,0 +1,136 @@
+.idea
+Runtime
+.config
+vendor
+*_test
+
+## .gitignore for Grails 1.2 and 1.3
+# .gitignore for maven
+target/
+
+*.releaseBackup
+# web application files
+#/web-app/WEB-INF
+# IDE support files
+/.classpath
+/.launch
+/.project
+/.settings
+/*.launch
+/*.tmproj
+/ivy*
+/eclipse
+# default HSQL database files for production mode
+/prodDb.*
+# general HSQL database files
+*Db.properties
+*Db.script
+# log
+/stacktrace.log
+/test/reports
+/logs
+*.log
+*.lst
+# project release file
+/*.war
+# plugin release file
+/*.zip
+/*.zip.sha1
+# older plugin install locations
+/plugins
+/web-app/plugins
+/web-app/WEB-INF/classes
+# "temporary" build files
+out/
+# other
+*.iws
+#.gitignore for java
+*.class
+# Package Files #
+*.war
+*.ear
+## .gitignore for eclipse
+*.pydevproject
+.project
+.metadata
+#bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+# External tool builders
+.externalToolBuilders/
+# Locally stored "Eclipse launch configurations"
+*.launch
+# CDT-specific
+.cproject
+# PDT-specific
+.buildpath
+## .gitignore for intellij
+*.iml
+*.ipr
+.idea/
+## .gitignore for linux
+.*
+!.gitignore
+*~
+## .gitignore for windows
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+# Folder config file
+Desktop.ini
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+## .gitignore for mac os x
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+# Thumbnails
+._*
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+*_copy.html
+*_copy.htm
+*.pdb
+
+# go  main.exe
+main.exe
+_debug_bin
+main
+
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test binary, build with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Project-local glide cache, RE: https://github.com/Masterminds/glide/issues/736
+.glide/
+
+
+/bin
+debug
+/.vscode
+
+# Created by .ignore support plugin (hsz.mobi)
+### Go template
+# Binaries for programs and plugins
+*.exe~
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+/.idea
