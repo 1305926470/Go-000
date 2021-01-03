@@ -81,6 +81,9 @@ func (sw *SlideWindow) Stats() map[int64]*bucket {
 // 按秒级纬度划分， 1秒 一个 bucket
 // size 为 bucket 数量
 func NewWindow(size int64) SlideWindow {
+	if size <= 0 {
+		panic("The size must be greater than 0")
+	}
 	return SlideWindow{
 		windowSize: size,
 		bucketMutex:  &sync.RWMutex{},
