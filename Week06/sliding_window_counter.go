@@ -44,9 +44,14 @@ func (sw *SlideWindow) removeBucket() {
 
 // 计数
 func (sw *SlideWindow) Inc() {
+	sw.IncN(1)
+}
+
+// 计数
+func (sw *SlideWindow) IncN(i int64) {
 	sw.bucketMutex.Lock()
 	bucket := sw.getCurrentBucket()
-	bucket.val++
+	bucket.val += i
 	sw.bucketMutex.Unlock()
 	sw.removeBucket()
 }
