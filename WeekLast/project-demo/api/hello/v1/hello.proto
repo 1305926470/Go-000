@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+import "github.com/gogo/protobuf/gogoproto/gogo.proto";
+import "google/protobuf/empty.proto";
+import "google/api/annotations.proto";
+
+// package 命名使用 {appid}.{version} 的方式, version 形如 v1, v2 ..
+package myapp.hello.v1;
+
+option go_package = "v1";
+option (gogoproto.goproto_getters_all) = false;
+
+service Hello {
+  rpc SayHello(HelloReq) returns (.google.protobuf.Empty);
+}
+
+message HelloReq {
+  string name = 1 [(gogoproto.moretags) = 'form:"name" validate:"required"'];
+}
+
+message HelloResp {
+  string Content = 1 [(gogoproto.jsontag) = 'content'];
+}
